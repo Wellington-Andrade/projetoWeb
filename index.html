@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px;)" href="medium.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1440px;)" href="large.css" />
+
+    <script>
+        function hoverFundoPs4() {
+            document.getElementById("fundo").style = "transition: .5s; background: url(fundoPs4.jpg)"
+            document.getElementById("quemS").style = "transition: .5s; color: blue"
+            document.getElementById("faleC").style = "transition: .5s; color: blue"
+            document.getElementById("tilt").style = "transition: .5s; color: blue"
+
+        } function hoverSemFundo() {
+            document.getElementById("fundo").style = "transition: .5s; background: url(fundoPadrao.jpg)"
+            document.getElementById("quemS").style = "transition: .5s; color: red"
+            document.getElementById("faleC").style = "transition: .5s; color: red"
+            document.getElementById("tilt").style = "transition: .5s; color: red"
+            document.getElementById("tilt2").style = "transition: .5s; color: white"
+        };
+
+        function hoverFundoXbox() {
+            document.getElementById("fundo").style = "transition: .5s; background: url(fundoXbox.jpg)"
+            document.getElementById("quemS").style = "transition: .5s; color: rgb(7, 233, 7)"
+            document.getElementById("faleC").style = "transition: .5s; color: rgb(7, 233, 7)"
+            document.getElementById("tilt").style = "transition: .5s; color: rgb(7, 233, 7)"
+        }
+
+        function hoverFundoSwitch() {
+            document.getElementById("fundo").style = "transition: .5s; background: url(fundoSwitch1.jpg)"
+            document.getElementById("quemS").style = "transition: .5s; color: rgb(0, 217, 255)"
+            document.getElementById("faleC").style = "transition: .5s; color: tomato"
+            document.getElementById("tilt").style = "transition: .5s; color: grey"
+        }
+
+        function hoverFundoPC() {
+            document.getElementById("fundo").style = "transition: .5s; background: url(fundoPC.jpg)"
+            document.getElementById("quemS").style = "transition: .5s; color: white"
+            document.getElementById("faleC").style = "transition: .5s; color: white"
+            document.getElementById("tilt").style = "transition: .5s; color: white"
+            document.getElementById("tilt2").style = "transition: .5s; color: grey"
+        }
+
+    </script>
+
+    <style>
+        @font-face {
+            font-family: Againts;
+            src: url('Againts.otf');
+        }
+
+        .head {
+            font-family: Againts;
+        }
+
+        .btn {
+            text-align: center;
+            position: relative;
+            bottom: 30px;
+        }
+
+        .top {
+            text-align: center;
+        }
+
+        .xbox {
+            color: aliceblue;
+            border: white solid 2px;
+            background-image: url(tenor.gif);
+            cursor: pointer;
+        }
+
+        .ps4 {
+            color: aliceblue;
+            border: white solid 2px;
+            background-image: url(ps5.gif);
+            cursor: pointer;
+        }
+
+        .pc {
+            color: black;
+            border: white solid 2px;
+            background-image: url(pc.gif);
+            cursor: pointer;
+        }
+
+        .switch {
+            color: aliceblue;
+            border: white solid 2px;
+            background-image: url(switch12.gif);
+            cursor: pointer;
+        }
+
+        .xbox:hover {
+            transition: .5s;
+            box-shadow: 0 0 3px rgb(7, 233, 7),
+                0 0 20px rgb(7, 233, 7),
+                0 0 30px rgb(7, 233, 7),
+                0 0 70px rgb(7, 233, 7)
+        }
+
+        .ps4:hover {
+            transition: .5s;
+            box-shadow: 0 0 3px rgb(0, 225, 255),
+                0 0 30px rgb(0, 225, 255),
+                0 0 50px rgb(0, 225, 255),
+                0 0 100px rgb(0, 225, 255)
+        }
+
+        .pc:hover {
+            transition: .5s;
+            box-shadow: 0 0 3px rgb(255, 255, 255),
+                0 0 20px rgb(255, 255, 255),
+                0 0 30px rgb(255, 255, 255),
+                0 0 70px rgb(255, 255, 255)
+        }
+
+        .switch:hover {
+            transition: .5s;
+            box-shadow: 0 0 5px rgb(0, 217, 255),
+                0 0 30px rgb(252, 6, 6),
+                0 0 50px rgb(252, 6, 6),
+                0 0 100px rgb(0, 217, 255)
+        }
+
+        h1 {
+            font-size: 69px;
+            color: white;
+        }
+
+        a.ps4 {
+            top: 250px;
+            position: relative;
+            text-decoration: none;
+            margin: 15px 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        a.xbox {
+            top: 250px;
+            position: relative;
+            text-decoration: none;
+            margin: 15px 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        a.switch {
+            top: 250px;
+            position: relative;
+            text-decoration: none;
+            margin: 15px 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        a.pc {
+            top: 250px;
+            position: relative;
+            text-decoration: none;
+            margin: 15px 20px;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        a.menuTop {
+            position: relative;
+            color: red;
+            font-size: 18px;
+            text-decoration: none;
+            bottom: -12px;
+            padding: 15px 298px;
+            margin: 0px -2px;
+            border-top: white solid 1px;
+            border-bottom: white solid 1px;
+        }
+
+        a.menuTop:hover {
+            transition: .3s;
+            border-bottom: red solid 3px;
+            border-top: red solid 3px;
+        }
+
+        .title {
+            position: relative;
+            color: red;
+            padding: 0;
+            margin: 0;
+            margin-bottom: -132px;
+            margin-left: 642px;
+        }
+
+        .title1 {
+            margin-left: 660px;
+        }
+    </style>
+
+</head>
+
+<body id="fundo" background="fundoPadrao.jpg">
+    <div class="head">
+        <div class="titulo">
+            <h1 id="tilt" class="title">X</h1>
+            <h1 id="tilt2" class="title1">Games</h1>
+        </div>
+        <div class="top">
+            <a id="quemS" class="menuTop" href="quemSomos.html">Quem somos?</a>
+            <a id="faleC" class="menuTop" href="faleConosco.html">Fale conosco</a>
+        </div>
+        <div class="btn">
+            <a class="ps4" href="produtosServicosPs.html" onmouseover="hoverFundoPs4()" onmouseout="hoverSemFundo()">
+                P&nbsp;S4</a>
+            <a class="xbox" href="produtosServicosXbox.html" onmouseover="hoverFundoXbox()" onmouseout="hoverSemFundo()"> Xbox One</a>
+            <a class="switch" href="produtosServicosSwitch.html" onmouseover="hoverFundoSwitch()" onmouseout="hoverSemFundo()"> Switch</a>
+            <a class="pc" href="produtosServicosPC.html" onmouseover="hoverFundoPC()" onmouseout="hoverSemFundo()"> PC</a>
+        </div>
+    </div>
+</body>
+
+</html>

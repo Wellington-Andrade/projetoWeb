@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function resp() {
+
+            var nome = document.getElementById("nome").value;
+            alert("Obrigado " + nome + "! Entraremos em contato em breve.")
+
+        }
+    </script>
+
+    <style>
+        @font-face {
+            font-family: Againts;
+            src: url('Againts.otf');
+        }
+
+        * {
+            text-align: center;
+        }
+
+        .head {
+            font-family: Againts;
+            color: red;
+        }
+
+        .form {
+            font-family: Century Gothic;
+            color: white
+        }
+
+        .campo {
+            opacity: 30%;
+        }
+
+        .info {
+            font-family: Century Gothic;
+            color: white;
+            font-size: 13px;
+        }
+
+        .btn {
+            border: red solid 1px;
+            border-radius: 3px;
+            margin: 15px 20px;
+            padding: 15px 65px;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            color: white;
+            background-color: unset;
+            font-size: 16px;
+            border: red solid 1px;
+            border-radius: 3px;
+            margin: 15px 20px;
+            padding: 15px 65px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transition: .5s;
+            box-shadow: 0 0 5px rgb(252, 6, 6),
+                0 0 30px rgb(252, 6, 6),
+                0 0 50px rgb(252, 6, 6),
+                0 0 100px rgb(252, 6, 6)
+        }
+
+        .btn1:hover {
+            transition: .5s;
+            box-shadow: 0 0 5px rgb(252, 6, 6),
+                0 0 30px rgb(252, 6, 6),
+                0 0 50px rgb(252, 6, 6),
+                0 0 100px rgb(252, 6, 6)
+        }
+
+        .logo {
+            text-align: left;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body id="fundo" background="fundoPadrao.jpg">
+
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo3.png" width="100">
+        </a>
+    </div>
+
+    <div class="head">
+        <h1>Fale Conosco</h1>
+    </div>
+    <div class="info">
+        Telefone Matriz: 0800 555 8080
+        <br>
+        <br>
+        E-mail: xgames.contato@xgames.com.br
+    </div>
+    <br>
+    <div class="form">
+        Preencha os campos abaixo para contatarmos você.
+        <br>
+        <br>
+        <form>
+            <label>Nome*</label><br>
+            <input class="campo" type="text" maxlength="256" size="64" id="nome"><br><br>
+            <label>Sobrenome*</label><br>
+            <input class="campo" type="text" maxlength="256" size="64"><br><br>
+            <label>CPF*</label><br>
+            <input class="campo" type="text" size="64"><br><br>
+            <label>Telefone Celular</label><br>
+            <input class="campo" type="text" size="64" placeholder="(DDD)+Telefone"><br><br>
+            <label>E-mail*</label><br>
+            <input class="campo" type="text" size="64" placeholder="Ex: joaozinho@exemplo.com"><br><br>
+            <label>Escreva com poucas palavras o motivo do contato.</label><br>
+            <textarea class="campo" cols="64" rows="10"></textarea><br><br>
+            <a class="btn" type="button" value="Enviar" onclick="resp()">Enviar</a>
+            <input class="btn1" type="reset" value="Limpar">
+        </form>
+    </div>
+</body>
+
+</html>
